@@ -5,35 +5,49 @@ using UnityEngine;
 public class Settings : MonoBehaviour
 {
     [SerializeField]
-    Canvas m_SettingsMenu;
+    Canvas m_SettingsCanvas;
     [SerializeField]
-    Canvas m_AccessibilityMenu;
+    Canvas m_AccessibilityCanvas;
+
+
+    [SerializeField]
+    bool isPaused;
 
     
-    
 
-   [SerializeField] bool isPaused = false;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        m_SettingsMenu.enabled = false;
-        m_AccessibilityMenu.enabled = false;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+        isPaused = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        if (isPaused == true)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
-            m_SettingsMenu.enabled = true;
-            isPaused = true;
-        } else
-        {
-            
-            m_SettingsMenu.enabled = false;
-            isPaused = false;
+            openSettings();
         }
+    }
+
+    public void openSettings()
+    {
+        isPaused = true;
+        m_SettingsCanvas.enabled =  true;
+    }
+
+    public void closeSettings()
+    {
+        isPaused = false;
+        m_SettingsCanvas.enabled = false;
     }
 }
