@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{25eedcd7-9568-412d-83ce-99b236d7a7e3}">
+        <property name="assetPath">
+            <value>Baby/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b4843f15-2fc9-4159-8186-ced2d08397b3}</destination>
+        </relationship>
+    </object>
+</objects>

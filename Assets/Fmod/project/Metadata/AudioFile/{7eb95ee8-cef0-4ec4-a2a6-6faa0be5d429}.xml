@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7eb95ee8-cef0-4ec4-a2a6-6faa0be5d429}">
+        <property name="assetPath">
+            <value>Footsteps/Footsteps_on_Cement-Tim_Fryer-870410055.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>25.152000000000001</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b4843f15-2fc9-4159-8186-ced2d08397b3}</destination>
+        </relationship>
+    </object>
+</objects>
