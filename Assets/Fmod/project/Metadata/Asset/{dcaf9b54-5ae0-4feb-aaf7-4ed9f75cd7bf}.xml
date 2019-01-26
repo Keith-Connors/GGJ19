@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{dcaf9b54-5ae0-4feb-aaf7-4ed9f75cd7bf}">
+        <property name="assetPath">
+            <value>Knocking/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b4843f15-2fc9-4159-8186-ced2d08397b3}</destination>
+        </relationship>
+    </object>
+</objects>

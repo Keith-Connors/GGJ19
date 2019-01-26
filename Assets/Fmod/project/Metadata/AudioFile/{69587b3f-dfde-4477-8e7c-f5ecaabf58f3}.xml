@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{69587b3f-dfde-4477-8e7c-f5ecaabf58f3}">
+        <property name="assetPath">
+            <value>Appliances/Dishwasher-SoundBible.com-1917190099.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>12.721632653061224</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b4843f15-2fc9-4159-8186-ced2d08397b3}</destination>
+        </relationship>
+    </object>
+</objects>

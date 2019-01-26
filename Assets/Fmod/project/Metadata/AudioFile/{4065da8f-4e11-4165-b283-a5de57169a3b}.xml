@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{4065da8f-4e11-4165-b283-a5de57169a3b}">
+        <property name="assetPath">
+            <value>Appliances/Sony_Battery_AM_Radio_Tuning_1-SailorMoonFan-222190110.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>25.416</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b4843f15-2fc9-4159-8186-ced2d08397b3}</destination>
+        </relationship>
+    </object>
+</objects>
