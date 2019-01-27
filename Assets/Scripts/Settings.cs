@@ -1,39 +1,119 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Wilberforce;
 
 public class Settings : MonoBehaviour
 {
     [SerializeField]
-    Canvas m_SettingsMenu;
+    Canvas m_SettingsCanvas;
+
     [SerializeField]
-    Canvas m_AccessibilityMenu;
+    Canvas m_AccessibilityCanvas;
 
-    
-    
+    [SerializeField]
+    Colorblind m_colorBlind;
 
-   [SerializeField] bool isPaused = false;
+    [SerializeField]
+    bool isPaused;
 
-    // Start is called before the first frame update
-    void Start()
+
+    CursorLockMode wantedMode;
+
+
+    private void Start()
     {
-        m_SettingsMenu.enabled = false;
-        m_AccessibilityMenu.enabled = false;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+        isPaused = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+
+        if (isPaused == true)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
-            m_SettingsMenu.enabled = true;
-            isPaused = true;
-        } else
-        {
-            
-            m_SettingsMenu.enabled = false;
-            isPaused = false;
+            openSettings();
         }
+    }
+
+    public void openSettings()
+    {
+        isPaused = true;
+        m_SettingsCanvas.enabled =  true;
+        m_AccessibilityCanvas.enabled = false;
+    }
+
+    public void closeSettings()
+    {
+        isPaused = false;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+    }
+
+    public void openAccessibilityMenu()
+    {
+        isPaused = true;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = true;
+    }
+
+    public void closeAccessibilityMenu()
+    {
+        m_AccessibilityCanvas.enabled = false;
+        m_SettingsCanvas.enabled = false;
+        isPaused = false;
+    }
+
+    public void loadNormalVision() //Turn Off Color Blind assistance
+    {
+        m_colorBlind.Type = 0;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+        isPaused = false;
+    }
+
+    public void loadProtanopiaVision() //Protanopia
+    {
+        m_colorBlind.Type = 1;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+        isPaused = false;
+    }
+
+    public void loadDeuteranopiaVision() //Deuteranopia
+    {
+        m_colorBlind.Type = 2;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+        isPaused = false;
+    }
+
+    public void loadTritanopiaVision() //Tritanopia
+    {
+        m_colorBlind.Type = 3;
+        m_SettingsCanvas.enabled = false;
+        m_AccessibilityCanvas.enabled = false;
+        isPaused = false;
+    }
+
+    void SetCursorState()
+    {
+        Cursor.lockState = wantedMode;
+        Cursor.visible = (CursorLockMode.Locked != wantedMode);
+    }
+
+    void OnGUI()
+    {
+        SetCursorState();
     }
 }
