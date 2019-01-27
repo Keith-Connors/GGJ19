@@ -16,10 +16,16 @@ public class Timer : MonoBehaviour
     {
         timer += Time.deltaTime;
         float seconds = timer % 60;
-        if (timer % 5 == 0)
+        if (Mathf.RoundToInt (timer) % 5 == 1)
         {
-            currentevent = Random.Range(0, events.Length);
-            events[currentevent].isactive = true;
+            StartCoroutine("choose");
+
         }
+    }
+    IEnumerator choose ()
+    {
+        currentevent = Random.Range(0, events.Length);
+        yield return new WaitForSeconds(5);
+        events[currentevent].isactive = true;
     }
 }
