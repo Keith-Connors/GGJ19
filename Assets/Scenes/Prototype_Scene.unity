@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -548,6 +548,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27538
 =======
   m_Name: pb_Mesh31258
@@ -555,6 +556,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27538
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38116
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -883,6 +887,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27880
 =======
   m_Name: pb_Mesh31500
@@ -890,6 +895,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27880
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38244
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1086,122 +1094,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!1 &237061561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 237061562}
-  m_Layer: 5
-  m_Name: GameOver
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &237061562
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237061561}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1293842466}
-  - {fileID: 247144840}
-  m_Father: {fileID: 537282203}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &247144839
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 247144840}
-  - component: {fileID: 247144842}
-  - component: {fileID: 247144841}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &247144840
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247144839}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 237061562}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 723.8, y: 175.2}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &247144841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247144839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 125
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 125
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Game Over
---- !u!222 &247144842
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247144839}
-  m_CullTransparentMesh: 0
 --- !u!1 &252527215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,10 +1611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c8826febfa57043a19de5b533cd2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isactive: 0
-  timer: 0
-  audio: {fileID: 267536480}
-  ai: {fileID: 791807538}
 --- !u!65 &267536482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4422,6 +4310,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27376
 =======
   m_Name: pb_Mesh31110
@@ -4429,6 +4318,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27376
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38016
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4616,6 +4508,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27522
 =======
   m_Name: pb_Mesh31242
@@ -4623,6 +4516,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27522
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38104
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4784,6 +4680,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27344
 =======
   m_Name: pb_Mesh31080
@@ -4791,6 +4688,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27344
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh37996
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -5055,19 +4955,51 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 1031122f96bae7e4788d1845e4598593, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 --- !u!4 &525083774 stripped
+=======
+--- !u!1 &525083773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1315094098}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525083774}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &525083774
+>>>>>>> parent of 51b002c... fix bugs
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 400004, guid: d7b3bb9070376704d8f1690623bd241f,
     type: 3}
   m_PrefabInstance: {fileID: 1315094098}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
 =======
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_GameObject: {fileID: 525083773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1315094099}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 51b002c... fix bugs
 --- !u!1001 &525984051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5221,7 +5153,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1789749504}
-  - {fileID: 237061562}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
   m_RootOrder: 13
@@ -5246,8 +5177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7abf16ac4b1984a9d8e810bd08aed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slide: {fileID: 1789749503}
-  ai: {fileID: 791807538}
 --- !u!1 &538433928
 GameObject:
   m_ObjectHideFlags: 0
@@ -7790,10 +7719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c8826febfa57043a19de5b533cd2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isactive: 0
-  timer: 0
-  audio: {fileID: 594249774}
-  ai: {fileID: 791807538}
 --- !u!1 &624961281
 GameObject:
   m_ObjectHideFlags: 0
@@ -8212,6 +8137,7 @@ Transform:
   m_Children:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 525083774}
 =======
   - {fileID: 1642388504}
@@ -8222,6 +8148,9 @@ Transform:
   m_RootOrder: 12
 =======
   - {fileID: 525083774}
+=======
+  - {fileID: 1315094099}
+>>>>>>> parent of 51b002c... fix bugs
   - {fileID: 267536479}
   - {fileID: 594249772}
   m_Father: {fileID: 0}
@@ -9711,8 +9640,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentstate: 0
   limit: 100
-  gameover: {fileID: 237061561}
-  time: {fileID: 791807539}
 --- !u!114 &791807539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11964,6 +11891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 --- !u!1 &1293842465
@@ -12041,6 +11969,9 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 =======
 --- !u!1001 &1266077973
+=======
+--- !u!1001 &1315094098
+>>>>>>> parent of 51b002c... fix bugs
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12171,6 +12102,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: d7b3bb9070376704d8f1690623bd241f, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1315094100 stripped
 =======
 --- !u!4 &1315094099
@@ -12193,11 +12125,44 @@ Transform:
 =======
 --- !u!1 &1315094100 stripped
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+--- !u!4 &1315094099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1315094098}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638775442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1315094104}
+  - {fileID: 525083774}
+  m_Father: {fileID: 632521544}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1315094100
+>>>>>>> parent of 51b002c... fix bugs
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 100004, guid: d7b3bb9070376704d8f1690623bd241f,
     type: 3}
   m_PrefabInstance: {fileID: 1315094098}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315094104}
+  - component: {fileID: 1315094101}
+  - component: {fileID: 1315094103}
+  - component: {fileID: 1315094102}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!82 &1315094101
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12306,10 +12271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c8826febfa57043a19de5b533cd2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isactive: 0
-  timer: 0
-  audio: {fileID: 1315094101}
-  ai: {fileID: 791807538}
 --- !u!65 &1315094103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12325,7 +12286,10 @@ BoxCollider:
   m_Center: {x: -0.23144542, y: 0.61, z: 0.5102579}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 51b002c... fix bugs
 --- !u!4 &1315094104
 Transform:
   m_ObjectHideFlags: 0
@@ -12337,12 +12301,18 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< HEAD
   m_Father: {fileID: 1642388504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
 =======
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Father: {fileID: 1315094099}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 51b002c... fix bugs
 --- !u!1001 &1332975471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12497,6 +12467,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27502
 =======
   m_Name: pb_Mesh31222
@@ -12504,6 +12475,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27502
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38088
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -13300,6 +13274,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27646
 =======
   m_Name: pb_Mesh31320
@@ -13307,6 +13282,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27646
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38156
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -13806,8 +13784,12 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &1642388503
+=======
+--- !u!1 &1638775442
+>>>>>>> parent of 51b002c... fix bugs
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13815,7 +13797,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1642388504}
+=======
+  - component: {fileID: 1315094099}
+>>>>>>> parent of 51b002c... fix bugs
   m_Layer: 0
   m_Name: Crying (Missing Prefab)
   m_TagString: Untagged
@@ -13823,6 +13809,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &1642388504
 Transform:
   m_ObjectHideFlags: 0
@@ -13842,6 +13829,8 @@ Transform:
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
 =======
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+>>>>>>> parent of 51b002c... fix bugs
 --- !u!1 &1687301528
 GameObject:
   m_ObjectHideFlags: 0
@@ -14988,6 +14977,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27308
 =======
   m_Name: pb_Mesh31044
@@ -14995,6 +14985,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27308
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh37968
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -15317,6 +15310,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27480
 =======
   m_Name: pb_Mesh31200
@@ -15324,6 +15318,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27480
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38070
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -16173,6 +16170,7 @@ Mesh:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh27456
 =======
   m_Name: pb_Mesh29490
@@ -16180,6 +16178,9 @@ Mesh:
 =======
   m_Name: pb_Mesh27456
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+  m_Name: pb_Mesh38054
+>>>>>>> parent of 51b002c... fix bugs
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

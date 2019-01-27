@@ -7,7 +7,6 @@ public class Timer : MonoBehaviour
     public float timer = 0.0f;
     public EventInteract[] events;
     public int currentevent;
-    bool chosen = false;
 
     private void Start()
     {
@@ -35,12 +34,9 @@ public class Timer : MonoBehaviour
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
     IEnumerator choose ()
     {
-        if (chosen == false);
         currentevent = Random.Range(0, events.Length);
-        events[currentevent].isactive = true;
-        chosen = true;
         yield return new WaitForSeconds(5);
-        
+        events[currentevent].isactive = true;
     }
 <<<<<<< HEAD
 =======

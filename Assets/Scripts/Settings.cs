@@ -35,6 +35,7 @@ public class Settings : MonoBehaviour
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
 =======
 
+    CursorLockMode wantedMode;
 
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 
@@ -54,12 +55,10 @@ public class Settings : MonoBehaviour
         if (isPaused == true)
         {
             Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
             Time.timeScale = 1;
-            Cursor.lockState = CursorLockMode.Locked;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -75,6 +74,7 @@ public class Settings : MonoBehaviour
 <<<<<<< HEAD
         m_SettingsCanvas.enabled = true;
         m_AccessibilityCanvas.enabled = false;
+<<<<<<< HEAD
         
 =======
         m_SettingsCanvas.enabled =  true;
@@ -84,6 +84,8 @@ public class Settings : MonoBehaviour
         m_AccessibilityCanvas.enabled = false;
         
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+>>>>>>> parent of 51b002c... fix bugs
     }
 
     public void closeSettings()
@@ -102,7 +104,6 @@ public class Settings : MonoBehaviour
         isPaused = true;
         m_SettingsCanvas.enabled = false;
         m_AccessibilityCanvas.enabled = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 
     public void closeAccessibilityMenu()
@@ -143,6 +144,7 @@ public class Settings : MonoBehaviour
         m_AccessibilityCanvas.enabled = false;
         isPaused = false;
     }
+<<<<<<< HEAD
  
 <<<<<<< HEAD
 }
@@ -153,3 +155,17 @@ public class Settings : MonoBehaviour
 =======
 }
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+
+    void SetCursorState()
+    {
+        Cursor.lockState = wantedMode;
+        Cursor.visible = (CursorLockMode.Locked != wantedMode);
+    }
+
+    void OnGUI()
+    {
+        SetCursorState();
+    }
+}
+>>>>>>> parent of 51b002c... fix bugs
