@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
     public float timer = 0.0f;
     public EventInteract[] events;
     public int currentevent;
+    bool chosen = false;
 
     private void Start()
     {
@@ -24,8 +25,11 @@ public class Timer : MonoBehaviour
     }
     IEnumerator choose ()
     {
+        if (chosen == false);
         currentevent = Random.Range(0, events.Length);
-        yield return new WaitForSeconds(5);
         events[currentevent].isactive = true;
+        chosen = true;
+        yield return new WaitForSeconds(5);
+        
     }
 }

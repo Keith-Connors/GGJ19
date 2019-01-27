@@ -18,7 +18,6 @@ public class Settings : MonoBehaviour
     bool isPaused;
 
 
-    CursorLockMode wantedMode;
 
 
     private void Start()
@@ -34,10 +33,12 @@ public class Settings : MonoBehaviour
         if (isPaused == true)
         {
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
             Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -51,6 +52,7 @@ public class Settings : MonoBehaviour
         isPaused = true;
         m_SettingsCanvas.enabled = true;
         m_AccessibilityCanvas.enabled = false;
+        
     }
 
     public void closeSettings()
@@ -65,6 +67,7 @@ public class Settings : MonoBehaviour
         isPaused = true;
         m_SettingsCanvas.enabled = false;
         m_AccessibilityCanvas.enabled = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void closeAccessibilityMenu()
@@ -105,15 +108,5 @@ public class Settings : MonoBehaviour
         m_AccessibilityCanvas.enabled = false;
         isPaused = false;
     }
-
-    void SetCursorState()
-    {
-        Cursor.lockState = wantedMode;
-        Cursor.visible = (CursorLockMode.Locked != wantedMode);
-    }
-
-    void OnGUI()
-    {
-        SetCursorState();
-    }
+ 
 }
