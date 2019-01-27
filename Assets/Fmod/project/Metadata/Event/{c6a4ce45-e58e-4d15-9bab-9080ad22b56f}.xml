@@ -92,9 +92,6 @@
     </object>
     <object class="MixerBusPanner" id="{b3736a08-48c8-4e10-aeab-5767b026261e}"/>
     <object class="SingleSound" id="{9b97920a-1460-46cd-aa85-a4c35dba27d0}">
-        <property name="triggerProbabilityEnabled">
-            <value>true</value>
-        </property>
         <property name="length">
             <value>3.239183673469388</value>
         </property>
@@ -103,9 +100,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{ec3d1111-d0dd-4f18-a9e7-b413e43074ce}">
-        <property name="volume">
-            <value>-1.5</value>
-        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
