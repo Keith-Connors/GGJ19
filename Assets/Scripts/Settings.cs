@@ -30,10 +30,14 @@ public class Settings : MonoBehaviour
 <<<<<<< HEAD
 
 
+<<<<<<< HEAD
 =======
     
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
 =======
+=======
+    CursorLockMode wantedMode;
+>>>>>>> parent of 51b002c... fix bugs
 
     CursorLockMode wantedMode;
 
@@ -82,8 +86,11 @@ public class Settings : MonoBehaviour
 =======
         m_SettingsCanvas.enabled = true;
         m_AccessibilityCanvas.enabled = false;
+<<<<<<< HEAD
         
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
+=======
+>>>>>>> parent of 51b002c... fix bugs
 =======
 >>>>>>> parent of 51b002c... fix bugs
     }
@@ -145,6 +152,7 @@ public class Settings : MonoBehaviour
         isPaused = false;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 <<<<<<< HEAD
 }
@@ -156,6 +164,8 @@ public class Settings : MonoBehaviour
 }
 >>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 =======
+=======
+>>>>>>> parent of 51b002c... fix bugs
 
     void SetCursorState()
     {
@@ -167,5 +177,9 @@ public class Settings : MonoBehaviour
     {
         SetCursorState();
     }
+<<<<<<< HEAD
+}
+>>>>>>> parent of 51b002c... fix bugs
+=======
 }
 >>>>>>> parent of 51b002c... fix bugs
