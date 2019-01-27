@@ -1,24 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+=======
+using Wilberforce;
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 
 public class Settings : MonoBehaviour
 {
     [SerializeField]
     Canvas m_SettingsCanvas;
+<<<<<<< HEAD
     [SerializeField]
     Canvas m_AccessibilityCanvas;
 
+=======
+
+    [SerializeField]
+    Canvas m_AccessibilityCanvas;
+
+    [SerializeField]
+    Colorblind m_colorBlind;
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 
     [SerializeField]
     bool isPaused;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
 =======
     
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
+=======
+
+
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 
     private void Start()
     {
@@ -29,6 +47,10 @@ public class Settings : MonoBehaviour
 
     private void Update()
     {
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
         if (isPaused == true)
         {
             Time.timeScale = 0;
@@ -50,12 +72,18 @@ public class Settings : MonoBehaviour
     {
         isPaused = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_SettingsCanvas.enabled = true;
         m_AccessibilityCanvas.enabled = false;
         
 =======
         m_SettingsCanvas.enabled =  true;
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
+=======
+        m_SettingsCanvas.enabled = true;
+        m_AccessibilityCanvas.enabled = false;
+        
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
     }
 
     public void closeSettings()
@@ -63,6 +91,9 @@ public class Settings : MonoBehaviour
         isPaused = false;
         m_SettingsCanvas.enabled = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
         m_AccessibilityCanvas.enabled = false;
     }
 
@@ -113,8 +144,12 @@ public class Settings : MonoBehaviour
         isPaused = false;
     }
  
+<<<<<<< HEAD
 }
 =======
     }
 }
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
+=======
+}
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19

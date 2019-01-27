@@ -17,6 +17,7 @@ public class Timer : MonoBehaviour
     {
         timer += Time.deltaTime;
         float seconds = timer % 60;
+<<<<<<< HEAD
         if (timer % 5 == 0)
         {
             currentevent = Random.Range(0, events.Length);
@@ -24,6 +25,14 @@ public class Timer : MonoBehaviour
         }
     }
 <<<<<<< HEAD
+=======
+        if (Mathf.RoundToInt (timer) % 5 == 1)
+        {
+            StartCoroutine("choose");
+
+        }
+    }
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
     IEnumerator choose ()
     {
         if (chosen == false);
@@ -33,6 +42,9 @@ public class Timer : MonoBehaviour
         yield return new WaitForSeconds(5);
         
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 5b174ba23c7ca111ef6e7188a473cf6cd5d725ec
+=======
+>>>>>>> parent of 937297a... Merge branch 'master' of https://github.com/Keith-Connors/GGJ19
 }
