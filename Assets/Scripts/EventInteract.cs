@@ -19,7 +19,8 @@ public class EventInteract : MonoBehaviour
         }
         if (isactive == false)
         {
-            ai.currentstate -= timer / 200;
+            if (ai.currentstate >= 0)
+            ai.currentstate -= timer / 300;
         }
         if (isactive == true && audio.isPlaying == false)
         {
